@@ -31,29 +31,27 @@
     </div>
 
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#prodi" aria-expanded="true"
-            aria-controls="prodi">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#prodi" aria-expanded="true" aria-controls="prodi">
             <i class="fa-solid fa-circle-check"></i>
-            <span>Penilain & Diagram</span></a>
+            <span>Penilaian & Diagram</span></a>
         </a>
         <div id="prodi" class="collapse" aria-labelledby="heading1" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 @foreach ($data['p'] as $pr)
-                    <a class="collapse-item" href="{{ route($pr->kode) }}">{{ $pr->name }}</a>
+                <a class="collapse-item" href="{{ route($pr->kode) }}">{{ $pr->name }}</a>
                 @endforeach
             </div>
         </div>
     </li>
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#element" aria-expanded="true"
-            aria-controls="element">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#element" aria-expanded="true" aria-controls="element">
             <i class="fa-brands fa-elementor"></i>
             <span>Element & Berkas</span></a>
         </a>
         <div id="element" class="collapse" aria-labelledby="heading1" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 @foreach ($data['p'] as $pr)
-                    <a class="collapse-item" href="{{ route('element-' . $pr->kode) }}">{{ $pr->name }}</a>
+                <a class="collapse-item" href="{{ route('element-' . $pr->kode) }}">{{ $pr->name }}</a>
                 @endforeach
             </div>
         </div>

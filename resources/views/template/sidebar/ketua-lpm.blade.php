@@ -33,7 +33,7 @@
     <li class="nav-item">
         <a class="nav-link" href="{{ route(Auth::user()->prodi_kode) }}">
             <i class="fa-solid fa-circle-check"></i>
-            <span>Penilain & Diagram</span></a>
+            <span>Penilaian & Diagram</span></a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="{{ route('element-' . Auth::user()->prodi_kode) }}">

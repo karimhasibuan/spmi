@@ -33,7 +33,7 @@
     <li class="nav-item">
         <a class="nav-link" href="{{ route(Auth::user()->prodi_kode) }}">
             <i class="fa-solid fa-circle-check"></i>
-            <span>Penilain & Diagram</span></a>
+            <span>Penilaian & Diagram</span></a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="{{ route('element-' . Auth::user()->prodi_kode) }}">
@@ -46,8 +46,7 @@
             <span>Multi Search</span></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pengaturan" aria-expanded="true"
-            aria-controls="pengaturan">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pengaturan" aria-expanded="true" aria-controls="pengaturan">
             <i class="fas fa-fw fa-cog"></i>
             <span>Pengaturan</span>
         </a>
